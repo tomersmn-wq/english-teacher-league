@@ -598,6 +598,100 @@ body.tabs #shop .back,body.tabs #album .back,body.tabs #trophies .back{display:n
 .tlog .rs{border-radius:8px;padding:1px 8px;font-size:12px;font-weight:800}
 .tlog .rs.W{background:var(--good)}.tlog .rs.D{background:#64748b}.tlog .rs.L{background:var(--bad)}
 
+/* tidy shop & album */
+.shopx{display:flex;gap:8px;margin-bottom:10px}
+.sx{flex:1;min-width:0;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--panel-ink);border-radius:16px;padding:8px 12px;box-shadow:0 4px 0 rgba(0,0,0,.2);text-align:start}
+.sx span{font-size:26px}.sx b{font-size:15px;white-space:nowrap}
+.sx i{font-style:normal;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-inline-start:auto}
+.sx.deal{box-shadow:0 0 0 3px #ff8a1f,0 4px 0 rgba(0,0,0,.2)}
+.sx:disabled{opacity:.5}
+.cattabs{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none}
+.cattabs::-webkit-scrollbar{display:none}
+.ct{flex:none;width:66px;background:rgba(0,0,0,.22);color:#fff;border-radius:16px;padding:8px 2px 6px;display:flex;flex-direction:column;align-items:center;font-size:12px;font-weight:700;gap:2px}
+.ct span{font-size:26px;line-height:1.1}
+.ct.on{background:var(--gold);color:var(--btn-ink)}
+.cathint{font-size:13px;margin:0 2px 8px;opacity:.95}
+.shopgrid2{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.item2{position:relative;background:var(--panel);color:var(--panel-ink);border-radius:18px;padding:12px 6px 8px;text-align:center;box-shadow:0 4px 0 rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;gap:4px}
+.item2.equipped{box-shadow:0 0 0 3px var(--good),0 4px 0 rgba(0,0,0,.2)}
+.item2.trying{box-shadow:0 0 0 3px var(--gold),0 4px 0 rgba(0,0,0,.2)}
+.pv2{background:transparent;height:64px;width:100%;display:grid;place-items:center;font-size:40px;padding:0}
+.pv2 .sw{width:52px;height:52px;border-radius:50%;border:3px solid #fff;display:grid;place-items:center;font-family:"Secular One",sans-serif;font-size:22px;box-shadow:0 0 0 2px rgba(0,0,0,.15)}
+.pv2 .pvfig{width:48px}
+.nm2{font-size:13px;font-weight:800;line-height:1.2;min-height:32px;display:grid;place-items:center}
+.ib{width:100%;border-radius:12px;padding:8px 2px;font-weight:800;font-size:15px;background:var(--btn);color:var(--btn-ink)}
+.ib.own{background:var(--btn2);color:#fff}.ib.on{background:var(--good);color:#fff}
+.ib:disabled:not(.on){opacity:.4}
+.ptag,.dtag{position:absolute;top:6px;font-size:11px;font-weight:800;border-radius:8px;padding:1px 6px;z-index:2}
+.ptag{left:6px;background:#ede9fe;color:#6d28d9}.dtag{right:6px;background:#ff8a1f;color:#fff}
+.lk-stage{height:140px}
+.ahead{display:flex;align-items:center;gap:10px}
+.aprog{flex:1}.aprog b{font-family:"Secular One",sans-serif;font-weight:400;font-size:20px}
+.aprog .rbar{margin-top:4px}
+.aicon{width:46px;height:46px;border-radius:14px;background:var(--soft);font-size:24px;flex:none}
+.capline{font-size:14px;margin-top:8px;color:var(--muted)}.capline b{color:var(--panel-ink)}
+.apacks{display:flex;gap:8px;margin-top:12px}
+.apk{flex:1;font-size:18px;padding:14px 6px}.apk2{flex:0 0 96px}
+.atabs button{display:flex;flex-direction:column;align-items:center;gap:1px;padding:8px 2px}
+.atabs button span{font-size:24px;line-height:1.1}
+.atabs button small{font-size:11px;opacity:.8;font-weight:700}
+.agrp{background:rgba(0,0,0,.14);border-radius:18px;padding:10px;margin-top:12px}
+.agrp h3{display:flex;justify-content:space-between;align-items:center;font-size:17px;margin:0 2px 8px}
+.agrp h3 span{font-family:"Rubik",sans-serif;font-size:13px;opacity:.85}
+.tilebtn .pc-pos,.tilebtn .pc-traits,.tilebtn .pc-rar{display:none}
+.tilebtn .pcard{padding:6px 4px 8px}
+.tilebtn .pc-name{font-size:15px;margin-top:2px}
+.tilebtn .pcard.missing{min-height:118px}
+.pkopt{display:flex;align-items:center;gap:12px;width:100%;background:var(--soft);border-radius:16px;padding:12px;margin-top:8px;text-align:start;color:var(--panel-ink)}
+.pkopt span{font-size:34px}.pkopt div{flex:1}.pkopt b{display:block;font-size:17px}.pkopt small{color:var(--muted);font-size:13px}
+.pkopt i{font-style:normal;font-weight:800;font-size:16px;white-space:nowrap}
+.pkopt:disabled{opacity:.45}
+
+/* home: small buddy + readiness */
+.playrow{display:flex;gap:10px;align-items:stretch;margin-top:14px}
+.playrow .playbtn{flex:1;margin-top:0;font-size:28px;padding:16px 8px}
+.budmini{flex:0 0 74px;background:var(--soft);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:6px 2px;color:var(--panel-ink);box-shadow:inset 0 0 0 2px #a855f7}
+.bm-face{width:44px;height:44px}.bm-face svg{width:100%;height:100%;display:block}
+.bm-cap{font-size:11px;font-weight:800;line-height:1.15;color:#7c3aed}
+.examgo{display:flex;flex-direction:column;align-items:center;gap:4px}
+.examgo b{font-size:20px}
+.examgo small{font-size:13px;font-weight:700;opacity:.95}
+.okws{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.okw{display:inline-flex;align-items:center;gap:2px;direction:ltr;background:rgba(255,255,255,.22);border-radius:10px;padding:2px 8px;font-size:13px;font-weight:800}
+.okw span{font-size:18px}
+.ready2{margin-bottom:4px}
+.r2top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;color:var(--muted);font-weight:600;margin-bottom:6px}
+.r2top b{color:var(--panel-ink)}
+.r2top small{font-weight:600;opacity:.8}
+
+/* onboarding */
+.links{display:flex;justify-content:center;gap:18px;margin-top:18px}
+.links .linkbtn{margin:0}
+.coach{position:fixed;inset:0;z-index:85}
+.coach[hidden]{display:none}
+.coach-hole{position:fixed;border-radius:18px;box-shadow:0 0 0 9999px rgba(5,15,30,.72);transition:all .35s ease;pointer-events:none;outline:3px solid var(--gold)}
+.coach-hole.none{width:0;height:0;left:50%;top:40%;outline:none}
+.coach-tip{position:fixed;left:16px;right:16px;max-width:420px;margin:0 auto;background:var(--panel);color:var(--panel-ink);border-radius:20px;padding:14px 16px;box-shadow:0 6px 0 rgba(0,0,0,.3);text-align:center;transition:top .35s ease;animation:cerpop .35s cubic-bezier(.3,1.6,.5,1)}
+.coach-tip .ce{font-size:44px;line-height:1.1}
+.coach-tip p{margin:6px 0 10px;font-size:18px;font-weight:700;line-height:1.35}
+.coach-tip .cdots{display:flex;justify-content:center;gap:5px;margin-bottom:10px}
+.coach-tip .cdots i{width:8px;height:8px;border-radius:50%;background:var(--soft)}
+.coach-tip .cdots i.on{background:var(--gold)}
+.coach-tip .crow{display:flex;gap:8px}
+.coach-tip .crow .btn{font-size:17px;padding:11px}
+.gintro{text-align:start;display:grid;gap:8px;margin:12px 0}
+.gintro div{display:flex;align-items:center;gap:12px;background:var(--soft);border-radius:14px;padding:10px 12px;font-size:16px;font-weight:700}
+.gintro span{font-size:30px;flex:none}
+
+.budbtn.docked{position:relative;left:auto;right:auto;bottom:auto;width:50px;height:50px;flex:none;z-index:5;box-shadow:0 3px 0 rgba(0,0,0,.25),0 0 0 3px #a855f7;animation:budin .45s cubic-bezier(.3,1.6,.5,1)}
+.budbtn.docked .budlbl{display:none}
+.budbtn.docked i{top:-6px;right:-6px;min-width:20px;line-height:20px;font-size:12px}
+@keyframes budin{from{transform:scale(0) rotate(-30deg)}to{transform:scale(1) rotate(0)}}
+#bPanel .bstat .budbtn{width:42px;height:42px}
+.runhud{gap:6px}
+.runhud .chip2{white-space:nowrap;padding:4px 8px;font-size:16px}
+.runhud .hearts{white-space:nowrap;font-size:19px}
+
 .namegate{position:fixed;inset:0;z-index:90;background:radial-gradient(ellipse at 50% 30%,#2f9e4f,#14532d);display:flex;align-items:center;justify-content:center;padding:20px}
 .namegate[hidden]{display:none}
 .ng-in{background:var(--panel);color:var(--panel-ink);border-radius:24px;padding:22px 18px;max-width:380px;width:100%;text-align:center;box-shadow:0 8px 0 rgba(0,0,0,.25)}
@@ -651,7 +745,7 @@ body.tabs #shop .back,body.tabs #album .back,body.tabs #trophies .back{display:n
   <section class="screen on" id="home">
     <div id="lvlcard"></div>
     <div id="homeExtra"></div>
-    <button class="linkbtn" id="soundTest">🔊 בדיקת שמע</button>
+    <div class="links"><button class="linkbtn" id="tourAgain">❓ איך משחקים</button><button class="linkbtn" id="soundTest">🔊 בדיקת שמע</button></div>
     <div class="tip" id="soundStatus" hidden></div>
   </section>
 
@@ -828,8 +922,7 @@ body.tabs #shop .back,body.tabs #album .back,body.tabs #trophies .back{display:n
 
   <section class="screen" id="shop">
     <div class="bar"><button class="back" data-home>→ חזרה</button><h2>החנות של <span class="pname"></span></h2></div>
-    <div class="tip">קונים בנקודות שמרוויחים במשחקים 🪙</div>
-    <div id="shopBody"></div>
+        <div id="shopBody"></div>
   </section>
 
   <section class="screen" id="trophies">
@@ -853,6 +946,7 @@ body.tabs #shop .back,body.tabs #album .back,body.tabs #trophies .back{display:n
 </div>
 <button class="budbtn" id="budBtn" hidden aria-label="החבר עוזר"><span id="budFace"></span><i id="budCount"></i><b class="budlbl">עזרה</b></button>
 <div class="budtip" id="budTip" hidden></div>
+<div class="coach" id="coach" hidden><div class="coach-hole" id="coachHole"></div><div class="coach-tip" id="coachTip"></div></div>
 <div class="namegate" id="nameGate" hidden>
   <div class="ng-in">
     <div style="font-size:64px">⚽</div>
@@ -1296,7 +1390,7 @@ function crowd(d=1.2, v=.12){
   f.type = 'bandpass'; f.frequency.value = 900; g.gain.value = v;
   s.buffer = b; s.connect(f).connect(g).connect(c.destination); s.start();
 }
-const sfx = {
+const sfxBase = {
   tap(){ tone(700,.07,'sine',.08); },
   kick(){ tone(150,.15,'triangle',.5,0,60); },
   coin(){ tone(988,.07,'square',.05); tone(1319,.12,'square',.05,.06); },
@@ -1309,6 +1403,10 @@ const sfx = {
   whistle(){ tone(2400,.12,'sine',.08); tone(2400,.35,'sine',.08,.18); },
   win(){ [523,659,784,659,784,1047].forEach((f,i)=>tone(f,.22,'triangle',.12,i*.13)); crowd(2,.18); },
 };
+const sfx = Object.assign({}, sfxBase, {
+  save(){ sfxBase.save(); if (typeof budNeed === 'function') budNeed(); },
+  hit(){ sfxBase.hit(); if (typeof budNeed === 'function') budNeed(); },
+});
 let audioUnlocked = false;
 function unlockAudio(){
   const c = actx();
@@ -1452,13 +1550,14 @@ function renderHome(){
         const p = Math.min(2, W_(it.en).p);
         return `<button class="chip" data-say="${it.en}" aria-label="${it.he}"><span class="em ${it.num ? 'num' : ''}">${it.em}</span><span class="dots">${'●'.repeat(p)}<i>${'●'.repeat(2 - p)}</i></span></button>`;
       }).join('')}</div>
-      ${ready && !passed ? `<button class="btn examgo" id="goExam">📋 מבחן קבלה · אתה מוכן!</button>`
-        : passed ? `<div class="ready"><span>✅ עברת את השלב הזה</span></div>`
-        : `<div class="ready"><div class="rbar"><i style="width:${rc / rm * 100}%"></i></div><span>לקראת המבחן ${rc}/${rm}</span></div>`}
+      ${ready && !passed ? `<button class="btn examgo" id="goExam"><b>📋 מבחן קבלה · אתה מוכן!</b><small>ענית נכון פעמיים על כל מילה בשלב:</small><span class="okws">${levelItems(li).map(it => `<span class="okw"><span class="${it.num ? 'num' : ''}">${it.em}</span> ✓✓</span>`).join('')}</span></button>`
+        : passed ? `<div class="ready"><span>✅ עברת את המבחן של השלב הזה</span></div>`
+        : `<div class="ready2"><div class="r2top"><span>📋 כדי לפתוח את המבחן: לענות נכון <b>פעמיים</b> על כל מילה במשחקים <small>(● = תשובה נכונה)</small></span><b>${rc}/${rm}</b></div><div class="rbar"><i style="width:${rc / rm * 100}%"></i></div></div>`}
       ${worldOf(li) === 2 && !(S.buddy || {})[li] ? `<button class="buddyrow" id="buddyBtn">${buddySVG(BUDDIES[buddyIdx(li)], 1, true)}<div><b>🥚 בשלב הזה מחכה חבר חדש</b><small>עוברים את מבחן הקבלה כדי לתפוס אותו</small></div></button>` : ''}
-      ${(() => { const pi = partnerInfo(); if (!pi) return ''; const pr = buddyProgress(S.partner);
-        return `<button class="buddyrow partner" id="partnerBtn">${buddySVG(pi.b, pi.st)}<div><b>🐾 החבר שלך: <span dir="ltr">${pi.b.names[pi.st - 1]}</span></b><small>במשחק לוחצים עליו בפינה ומקבלים עזרה (${pi.st}× בכל משחק)${pi.st < 3 ? ` · להתפתחות: ${pi.st === 1 ? pr.m2 : pr.m3}/${pr.n} ✨` : ''}</small></div><span class="qmark">?</span></button>`; })()}
-      ${isTrained(li) ? '<button class="btn y playbtn" id="goPlayMenu">⚽ יאללה לשחק!</button>' : '<button class="btn y playbtn" id="goPlayMenu">🎧 קודם לומדים את המילים</button>'}
+      <div class="playrow">
+        ${isTrained(li) ? '<button class="btn y playbtn" id="goPlayMenu">⚽ יאללה לשחק!</button>' : '<button class="btn y playbtn" id="goPlayMenu">🎧 קודם לומדים את המילים</button>'}
+        ${(() => { const pi = partnerInfo(); return pi ? `<button class="budmini" id="partnerBtn" aria-label="החבר שלך"><span class="bm-face">${buddySVG(pi.b, pi.st)}</span><span class="bm-cap">החבר<br>שעוזר ?</span></button>` : ''; })()}
+      </div>
     </div>`;
   F('homeExtra').innerHTML = S.packs ? `<button class="nudge" id="nudgePack">🎁 מחכות לך ${S.packs} חבילות קלפים</button>` : '';
   F('lvlcard').querySelectorAll('[data-say]').forEach(b => b.onclick = () => sayIt(ITEMS[b.dataset.say]));
@@ -1469,6 +1568,8 @@ function renderHome(){
   const bb = F('buddyBtn'); if (bb) bb.onclick = () => { sfx.tap(); buddyDetail(li); };
   const pb2 = F('partnerBtn'); if (pb2) pb2.onclick = () => { sfx.tap(); budHelp(); };
   checkEvolve();
+  F('tourAgain').onclick = () => { sfx.tap(); startCoach(); };
+  if (!S.flags.tourHome && !F('modal').classList.contains('on') && F('coach').hidden && !(F('nameGate') && !F('nameGate').hidden)){ S.flags.tourHome = true; S.flags.budIntro = true; save(); setTimeout(startCoach, 900); }
   if (partnerInfo() && !S.flags.budIntro && !F('modal').classList.contains('on')){ S.flags.budIntro = true; save(); setTimeout(budHelp, 700); }
 }
 const GAMES = [
@@ -1486,7 +1587,7 @@ function playMenu(li){
     <div class="gmenu">${GAMES.map(([id, ic, he, d]) => `<button class="gtile ${id === 'boss' ? 'boss' : ''} ${id === 'wc' ? 'wc' : ''}" data-g="${id}"><span class="gi">${ic}</span><b>${he}</b><small>${d}</small></button>`).join('')}</div>
     <div class="row"><button class="btn b" id="gTrain">🎧 אימון מילים</button>${isReady(li) ? '<button class="btn y" id="gExam">📋 מבחן</button>' : ''}<button class="btn b" id="gClose" style="flex:0 0 56px">✕</button></div>`);
   const go = {run: startRun, gk: startGK, tac: startTac, play: startPlay, chain: startChain, boss: bossSelect, wc: openTour};
-  F('sheet').querySelectorAll('[data-g]').forEach(b => b.onclick = () => { sfx.tap(); closeModal(); go[b.dataset.g](li); });
+  F('sheet').querySelectorAll('[data-g]').forEach(b => b.onclick = () => { sfx.tap(); closeModal(); const g = b.dataset.g; gameIntro(g, () => go[g](li)); });
   F('gTrain').onclick = () => { closeModal(); openTrain(li); };
   const ge = F('gExam'); if (ge) ge.onclick = () => { closeModal(); startExam(li); };
   F('gClose').onclick = closeModal;
@@ -2813,33 +2914,32 @@ function renderAlbum(){
   renderHeader();
   const open = [...CARDS, ...WORLD].filter(c => cardOpen(c.k)).length, total = CARDS.length + WORLD.length, cap = captainCard();
   F('albumTop').innerHTML = `
-    <div class="atop"><div><b>${open}/${total}</b> קלפים באלבום</div>
-      <div>${cap ? `⭐ קפטן: <b style="font-size:17px">${cap.name}</b> (+${Math.round(RARITY[cap.rar].cap * 100)}% נקודות)` : '⭐ בחר שחקן כקפטן וקבל בונוס'}</div></div>
-    <div class="btn4">
-      <button class="btn y" id="pkHave" ${S.packs > 0 ? '' : 'disabled'}>🎁 לפתוח (${S.packs || 0})</button>
-      <button class="btn b" id="pkSuper" ${S.points >= 200 ? '' : 'disabled'}>💎 חבילת על 🪙200</button>
-      <button class="btn b" id="pkBuy" ${S.points >= 80 ? '' : 'disabled'}>👟 שחקנים 🪙80</button>
-      <button class="btn b" id="pkWorld" ${S.points >= 80 ? '' : 'disabled'}>🌍 עולם 🪙80</button>
-    </div>
-    <button class="btn b wide" id="trWords">📖 מילות הקלפים</button>
-    <p style="font-size:13px;color:var(--muted);margin:8px 0 0">🎁 חבילה חינם כל יום ועם כל מבחן קבלה. חבילת עולם = דגלים וערי כדורגל.</p>`;
+    <div class="ahead"><div class="aprog"><b>📚 ${open}/${total}</b><div class="rbar"><i style="width:${open / total * 100}%"></i></div></div>
+      <button class="aicon" id="trWords" aria-label="מילות הקלפים">📖</button></div>
+    ${cap ? `<div class="capline">⭐ הקפטן שלך: <b>${cap.name}</b> · ‎+${Math.round(RARITY[cap.rar].cap * 100)}% נקודות</div>` : ''}
+    <div class="apacks">
+      <button class="btn y apk" id="pkHave" ${S.packs > 0 ? '' : 'disabled'}>🎁 ${S.packs > 0 ? `לפתוח חבילה (${S.packs})` : 'אין חבילות כרגע'}</button>
+      <button class="btn b apk2" id="pkShop">🛒 לקנות</button>
+    </div>`;
   const tile = c => `<button class="tilebtn" data-card="${c.k}">${cardHTML(c, cardOpen(c.k) ? 'full' : S.cards[c.k] ? 'locked' : 'missing')}</button>`;
   const cnt = list => `${list.filter(c => cardOpen(c.k)).length}/${list.length}`;
-  const tabs = `<div class="atabs">
-    <button data-tab="players" class="${ATAB === 'players' ? 'on' : ''}">👟 שחקנים ${cnt(CARDS)}</button>
-    <button data-tab="flags" class="${ATAB === 'flags' ? 'on' : ''}">🏳️ דגלים ${cnt(FLAGS)}</button>
-    <button data-tab="cities" class="${ATAB === 'cities' ? 'on' : ''}">🏙️ ערים ${cnt(CITIES)}</button>
-    ${S.flags.champ ? `<button data-tab="buddies" class="${ATAB === 'buddies' ? 'on' : ''}">🐾 חברים ${Object.keys(S.buddy || {}).filter(k => k !== 'S').length}/${BUDDIES.length}</button>` : ''}</div>`;
+  const tb = (id, ic, he, c) => `<button data-tab="${id}" class="${ATAB === id ? 'on' : ''}"><span>${ic}</span>${he}<small>${c}</small></button>`;
+  const tabs = `<div class="atabs">${tb('players', '👟', 'שחקנים', cnt(CARDS))}${tb('flags', '🏳️', 'דגלים', cnt(FLAGS))}${tb('cities', '🏙️', 'ערים', cnt(CITIES))}${S.flags.champ ? tb('buddies', '🐾', 'חברים', `${Object.keys(S.buddy || {}).filter(k => k !== 'S').length}/${BUDDIES.length}`) : ''}</div>`;
   let body = '';
-  if (ATAB === 'players') body = TEAMS.map(t => `<h3 class="h3w">${t.icon} ${t.he} <span class="en">${t.en}</span> ${teamDone(t) ? '✅' : ''}</h3><div class="cardgrid">${CARDS.filter(c => c.team === t).map(tile).join('')}</div>`).join('');
-  else if (ATAB === 'flags') body = CONTS.map(([en, he, ic]) => { const l = FLAGS.filter(f => f.cont === en); return `<h3 class="h3w">${ic} ${he} <span class="en">${en}</span> ${contDone(en) ? '✅' : cnt(l)}</h3><div class="cardgrid">${l.map(tile).join('')}</div>`; }).join('');
+  const grp = (ic, he, list, done) => `<div class="agrp"><h3>${ic} ${he}<span>${done ? '✅' : cnt(list)}</span></h3><div class="cardgrid">${list.map(tile).join('')}</div></div>`;
+  if (ATAB === 'players') body = TEAMS.map(t => grp(t.icon, t.he, CARDS.filter(c => c.team === t), teamDone(t))).join('');
+  else if (ATAB === 'flags') body = CONTS.map(([en, he, ic]) => grp(ic, he, FLAGS.filter(f => f.cont === en), contDone(en))).join('');
   else if (ATAB === 'buddies') body = `<h3 class="h3w">🐾 החברים של אי החברים</h3><div class="cardgrid">${BUDDIES.map((b, k) => { const li = WORLD1_END + 1 + k, st = (S.buddy || {})[li] || 0; return `<button class="tilebtn" data-buddy="${li}"><div class="btile">${buddySVG(b, st || 1, !st)}<b>${st ? b.names[st - 1] : '???'}</b><small>${st ? '⭐'.repeat(st) : LEVELS[li].club}</small></div></button>`; }).join('')}</div>`;
-  else body = `<h3 class="h3w">🏙️ ערי כדורגל בעולם <span class="en">Football cities</span> ${CITIES.every(c => cardOpen(c.k)) ? '✅' : ''}</h3><div class="cardgrid">${CITIES.map(tile).join('')}</div>`;
+  else body = grp('🏙️', 'ערי כדורגל', CITIES, CITIES.every(c => cardOpen(c.k)));
   F('albumBody').innerHTML = tabs + body;
   F('pkHave').onclick = () => openPack('have');
-  F('pkBuy').onclick = () => openPack('buy');
-  F('pkWorld').onclick = () => openPack('world');
-  F('pkSuper').onclick = () => openPack('super');
+  F('pkShop').onclick = () => {
+    const opt = (k, ic, he, d, pr) => `<button class="pkopt" data-pk="${k}" ${S.points >= pr ? '' : 'disabled'}><span>${ic}</span><div><b>${he}</b><small>${d}</small></div><i>🪙${pr}</i></button>`;
+    modal(`<h2>🛒 חבילות קלפים</h2><p>יש לך 🪙 ${S.points}</p>
+      ${opt('buy', '👟', 'חבילת שחקנים', '3 שחקנים', 80)}${opt('world', '🌍', 'חבילת עולם', '3 דגלים וערים', 80)}${opt('super', '💎', 'חבילת על', 'לפחות קלף אפי אחד', 200)}
+      <p style="font-size:13px">🎁 חבילה חינם מגיעה כל יום ועם כל מבחן קבלה</p>`);
+    F('sheet').querySelectorAll('[data-pk]').forEach(b => b.onclick = () => { closeModal(); openPack(b.dataset.pk); });
+  };
   F('albumBody').querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { ATAB = b.dataset.tab; sfx.tap(); renderAlbum(); });
   F('trWords').onclick = () => {
     modal(`<h2>📖 מילות הקלפים</h2><p>לוחצים ושומעים</p>
@@ -3368,26 +3468,36 @@ function partnerInfo(){
   const b = BUDDIES[buddyIdx(S.partner)]; if (!b) return null;
   return {b, st: S.buddy[S.partner]};
 }
+const BUD_DOCK = {run:'#run .runhud', gk:'#gk .runhud', play:'#play .listen', tac:'#tac .ta-coach', chain:'#chain .listen', boss:'#bPanel .bstat'};
+let budHideT = 0;
 function budSetup(id){
   const btn = F('budBtn'), pi = partnerInfo();
-  if (!pi || !GAME_SCREENS.includes(id)){ btn.hidden = true; BUD.screen = null; return; }
-  BUD.screen = id; BUD.left = pi.st;
+  clearTimeout(budHideT); btn.hidden = true;
+  if (!pi || !GAME_SCREENS.includes(id)){ BUD.screen = null; return; }
+  BUD.screen = id; BUD.left = pi.st; BUD.hinted = false;
   F('budFace').innerHTML = buddySVG(pi.b, pi.st);
-  btn.hidden = false; budCount();
-  S.budTips = (S.budTips || 0);
-  if (S.budTips < 10){
-    S.budTips++; save();
-    const tip = F('budTip'), name = pi.b.names[pi.st - 1];
-    tip.innerHTML = `<b dir="ltr">${name}:</b> כשקשה, לחץ עליי ואעזור! 🐾`;
-    setTimeout(() => { if (BUD.screen === id) tip.hidden = false; }, 1200);
-    setTimeout(() => { tip.hidden = true; }, 6500);
+  const dock = document.querySelector(BUD_DOCK[id]);
+  if (dock){ dock.appendChild(btn); btn.classList.add('docked'); }
+  budCount();
+}
+/* the buddy only shows up when things go wrong, and hides again after a few seconds */
+function budNeed(){
+  const btn = F('budBtn'), pi = partnerInfo();
+  if (!pi || !BUD.screen || BUD.left <= 0) return;
+  const scr = document.querySelector('.screen.on'); if (!scr || scr.id !== BUD.screen) return;
+  if (btn.hidden){
+    btn.hidden = false; btn.classList.remove('docked'); void btn.offsetWidth; btn.classList.add('docked');
+    if (!BUD.hinted){ BUD.hinted = true; toast('🐾', pi.b.names[pi.st - 1], 'קשה? לחץ עליי למעלה ואעזור!'); }
+    say('I can help!', {rate:.9, pitch:1.45});
   }
+  clearTimeout(budHideT);
+  budHideT = setTimeout(() => { btn.hidden = true; }, 9000);
 }
 function budHelp(){
   const pi = partnerInfo(); if (!pi) return;
   const name = pi.b.names[pi.st - 1];
   modal(`<div style="width:110px;margin:0 auto">${buddySVG(pi.b, pi.st)}</div><h2 dir="ltr">${name}</h2><p>החבר שלך עוזר לך בכל המשחקים!</p>
-    <div class="rules" style="text-align:start">1️⃣ במשחק הוא מחכה בעיגול בפינה למטה, עם המילה <b>עזרה</b><br>2️⃣ כשקשה, לוחצים עליו<br>3️⃣ הוא מוחק תשובה לא נכונה, מאט את המשחק או שם מגן<br>⭐ כמה פעמים? <b>${pi.st}</b> בכל משחק. ככל שהחבר מתפתח, הוא עוזר יותר${S.partner === 'S' && pi.st < 3 ? `<br>✨ כדי ש${name} יתפתח: לדעת טוב ${pi.st === 1 ? 15 : 40} מילים (עכשיו ${masteredCount()})` : ''}</div>
+    <div class="rules" style="text-align:start">1️⃣ כשטועים במשחק, הוא קופץ למעלה ליד הלבבות או הניקוד<br>2️⃣ לוחצים עליו כשהוא מופיע<br>3️⃣ הוא מוחק תשובה לא נכונה, מאט את המשחק או שם מגן<br>⭐ כמה פעמים? <b>${pi.st}</b> בכל משחק. ככל שהחבר מתפתח, הוא עוזר יותר${S.partner === 'S' && pi.st < 3 ? `<br>✨ כדי ש${name} יתפתח: לדעת טוב ${pi.st === 1 ? 15 : 40} מילים (עכשיו ${masteredCount()})` : ''}</div>
     <div class="row"><button class="btn y" id="bhOk">הבנתי! 👍</button></div>`, null);
   say(`Hi ${NAME_EN}! I am ${name}! I can help you!`, {rate:.85, pitch:1.4});
   F('bhOk').onclick = closeModal;
@@ -3460,6 +3570,7 @@ F('budBtn').onclick = () => {
   BUD.left--; budCount();
   const btn = F('budBtn'); btn.classList.remove('go'); void btn.offsetWidth; btn.classList.add('go');
   sfx.win(); toast('🐾', pi.b.names[pi.st - 1], msg);
+  clearTimeout(budHideT); budHideT = setTimeout(() => { F('budBtn').hidden = true; }, 900);
   say(pick(['I can help!', `Let’s go, ${NAME_EN}!`, 'You can do it!']), {rate:.9, pitch:1.45});
   const r = btn.getBoundingClientRect();
   for (let i = 0; i < 8; i++){
@@ -3639,6 +3750,72 @@ function tourApply(res, detail){
   F('tOk').onclick = closeModal;
 }
 
+/* ================= ONBOARDING ================= */
+function coachSteps(){
+  const st = [
+    {e:'👋', t:'ברוך הבא לליגה האנגלית! בוא נראה מה יש פה'},
+    {sel:'#lvlcard .chips', e:'🎧', t:'אלה המילים של השלב. לוחצים ושומעים אותן באנגלית'},
+    {sel:'#goPlayMenu', e:'⚽', t:'כאן משחקים! קודם לומדים את המילים, ואז בוחרים משחק'},
+    {sel:'#pickLvl', e:'📍', t:'כאן כל השלבים. עוברים מבחן קבלה, ועולים שלב!'},
+  ];
+  if (F('partnerBtn')) st.push({sel:'#partnerBtn', e:'🐾', t:'זה החבר שלך. כשקשה במשחק, לוחצים עליו והוא עוזר'});
+  st.push({sel:'#tabbar [data-nav="shop"]', e:'🛍️', t:'חנות: קונים חולצות, כדורים ועוד עם הנקודות 🪙'},
+    {sel:'#tabbar [data-nav="album"]', e:'🃏', t:'קלפים: פותחים חבילות ואוספים שחקנים ודגלים'},
+    {sel:'#tabbar [data-nav="trophies"]', e:'🏆', t:'גביעים: כל ההישגים שלך'},
+    {e:'🚀', t:'זהו! יאללה לשחק ⚽', last:true});
+  return st;
+}
+let COACH = null;
+function startCoach(){
+  if (!F('home').classList.contains('on')) return;
+  closeModal(); window.scrollTo(0, 0);
+  COACH = {steps: coachSteps(), i: 0};
+  F('coach').hidden = false; coachShow();
+}
+function coachShow(){
+  const s = COACH.steps[COACH.i], hole = F('coachHole'), tip = F('coachTip');
+  const el = s.sel ? document.querySelector(s.sel) : null;
+  if (el){
+    el.scrollIntoView({block:'center'});
+    const r = el.getBoundingClientRect(), pad = 6;
+    hole.className = 'coach-hole';
+    Object.assign(hole.style, {left: (r.left - pad) + 'px', top: (r.top - pad) + 'px', width: (r.width + pad * 2) + 'px', height: (r.height + pad * 2) + 'px'});
+    tip.style.top = '0px';
+    tip.innerHTML = coachTipHTML(s);
+    const th = tip.offsetHeight, below = r.bottom + 14, above = r.top - th - 14;
+    tip.style.top = (below + th < innerHeight - 8 ? below : Math.max(8, above)) + 'px';
+  } else {
+    hole.className = 'coach-hole none'; hole.removeAttribute('style');
+    tip.innerHTML = coachTipHTML(s);
+    tip.style.top = Math.max(20, innerHeight / 2 - tip.offsetHeight / 2) + 'px';
+  }
+  F('cNext').onclick = () => { sfx.tap(); if (s.last) return endCoach(); COACH.i++; coachShow(); };
+  const sk = F('cSkip'); if (sk) sk.onclick = endCoach;
+}
+function coachTipHTML(s){
+  const n = COACH.steps.length;
+  return `<div class="ce">${s.e}</div><p>${s.t}</p>
+    <div class="cdots">${COACH.steps.map((_, k) => `<i class="${k === COACH.i ? 'on' : ''}"></i>`).join('')}</div>
+    <div class="crow">${s.last ? '' : '<button class="btn b" id="cSkip" style="flex:0 0 90px">דלג</button>'}<button class="btn y" id="cNext" style="flex:1">${s.last ? '⚽ יאללה!' : COACH.i === 0 ? 'בוא נתחיל ◂' : 'הבא ◂'}</button></div>`;
+}
+function endCoach(){ F('coach').hidden = true; COACH = null; window.scrollTo(0, 0); }
+window.addEventListener('resize', () => { if (COACH) coachShow(); });
+
+const GAME_INTRO = {
+  run:  {ic:'🏃', he:'ריצת דריבל', steps:[['👆', 'גוררים את האצבע ימינה ושמאלה'], ['🛑', 'בורחים מהשחקנים הכחולים'], ['🎧', 'שומעים מילה ← עוברים דרך התמונה שלה'], ['⚽', 'בסוף מבקיעים גול!']]},
+  gk:   {ic:'🧤', he:'שוער', steps:[['🎧', 'שומעים מילה'], ['👆', 'לוחצים על הכדור עם התמונה הנכונה'], ['🧤', 'יש 3 כפפות. אל תיתן לכדור הנכון להיכנס!']]},
+  boss: {ic:'👹', he:'קרב בוס', steps:[['⚽', 'עונים נכון = בעיטה שמורידה לבוס חיים'], ['⚡', 'עונים מהר = בעיטה חזקה במיוחד'], ['🛡️', 'כשהבוס תוקף, חוסמים עם התשובה הנכונה']]},
+};
+function gameIntro(mode, go){
+  const gi = GAME_INTRO[mode];
+  if (!gi || S.flags['intro_' + mode]) return go();
+  S.flags['intro_' + mode] = true; save();
+  modal(`<div class="big">${gi.ic}</div><h2>${gi.he}</h2>
+    <div class="gintro">${gi.steps.map(([e, t]) => `<div><span>${e}</span>${t}</div>`).join('')}</div>
+    <div class="row"><button class="btn y" id="giGo">⚽ יאללה!</button></div>`, null);
+  F('giGo').onclick = () => { closeModal(); go(); };
+}
+
 /* ================= TRYOUT (exam) ================= */
 let E = null;
 const allowedMiss = n => Math.max(1, Math.floor(n / 5));
@@ -3788,40 +3965,45 @@ function bindBuy(root){
     applyShirt(); mountFigs(); checkAch(); save(); renderShop(); shopQuiz(x);
   });
 }
+let SHOPCAT = 'shirt';
+const CAT_HINT = {cele:'✨ = נקודות בונוס על כל הצלחה', kick:'🎯 = יותר סיכוי להבקיע', trail:'מה שנשאר מאחוריך בריצה', pitch:'איפה משחקים'};
+function itemCard(x){
+  const own = S.owned.includes(x.id), on = S.equip[x.cat] === x.id, pr = priceOf(x), d = dealItem(), isDeal = d && d.id === x.id;
+  const perk = x.cat === 'cele' && PERK[x.val] ? `✨+${PERK[x.val]}` : x.cat === 'kick' && x.perk ? `🎯+${Math.round(x.perk * 100)}%` : '';
+  const btn = on ? `<button class="ib on" disabled>✓ שלי</button>` : own ? `<button class="ib own" data-eq="${x.id}">לבחור</button>`
+    : `<button class="ib" data-buy="${x.id}" ${S.points < pr ? 'disabled' : ''}>🪙 ${pr}</button>`;
+  return `<div class="item2 ${on ? 'equipped' : ''} ${TRY[x.cat] === x ? 'trying' : ''}">${isDeal ? '<span class="dtag">🔥 ‎-30%</span>' : ''}${perk ? `<span class="ptag">${perk}</span>` : ''}
+    <button class="pv2" data-try="${x.id}" aria-label="${x.name}">${itemPV(x)}</button><div class="nm2">${x.name}</div>${btn}</div>`;
+}
 function renderShop(){
   renderHeader();
-  const deal = dealItem();
-  const sec = cat => `<h3 class="h3w" id="sec-${cat}">${CATCFG[cat].icon} ${CATCFG[cat].title}</h3><div class="shopgrid">${SHOP.filter(x => x.cat === cat).map(x => {
-    const own = S.owned.includes(x.id), on = S.equip[cat] === x.id, pr = priceOf(x), isDeal = deal && deal.id === x.id;
-    const btn = on ? `<button class="on" disabled>✓ בשימוש</button>` : own ? `<button class="own" data-eq="${x.id}">להשתמש</button>`
-      : `<button data-buy="${x.id}" ${S.points < pr ? 'disabled' : ''}>🪙 ${pr}${isDeal ? ` <s>${x.price}</s>` : ''}</button>`;
-    const perk = cat === 'cele' && PERK[x.val] ? ` ✨+${PERK[x.val]}` : cat === 'kick' && x.perk ? ` 🎯+${Math.round(x.perk * 100)}%` : '';
-    return `<div class="item ${isDeal ? 'deal' : ''} ${TRY[cat] === x ? 'trying' : ''}">${isDeal ? '<div class="dealtag">🔥 מבצע</div>' : ''}<button class="pv" data-try="${x.id}" aria-label="למדוד ולשמוע">${itemPV(x)}</button><div class="nm">${x.name}${perk}</div><div class="enw">${x.word === 'nothing' ? '—' : CATCFG[cat].name(x.word)}</div>${btn}</div>`;
-  }).join('')}</div>`;
-  const left = SHOP.filter(x => x.price > 0 && !S.owned.includes(x.id)).length;
+  const deal = dealItem(), cat = SHOPCAT, left = SHOP.filter(x => x.price > 0 && !S.owned.includes(x.id)).length;
   F('shopBody').innerHTML = `
-    <div class="shoptop">
-      <button class="btn y" id="mystery" ${S.points >= 120 && left ? '' : 'disabled'}>🎁 קופסת הפתעה 🪙120</button>
-      ${deal ? `<button class="dealbox" data-go="${deal.cat}">🔥 מבצע היום: <b>${deal.name}</b> ‎−30%</button>` : ''}
-    </div>
     <div class="locker" id="locker"></div>
-    <div class="catnav">${SHOP_CATS.map(c => `<button data-go="${c}">${CATCFG[c].icon} ${CATCFG[c].short}</button>`).join('')}</div>
-    ${SHOP_CATS.map(sec).join('')}`;
+    <div class="shopx">
+      <button class="sx" id="mystery" ${S.points >= 120 && left ? '' : 'disabled'}><span>🎁</span><b>הפתעה</b><i>🪙120</i></button>
+      ${deal ? `<button class="sx deal" data-go="${deal.cat}"><span>🔥</span><b>מבצע היום</b><i>${deal.name}</i></button>` : ''}
+    </div>
+    <div class="cattabs">${SHOP_CATS.map(c => `<button class="ct ${c === cat ? 'on' : ''}" data-cat="${c}"><span>${CATCFG[c].icon}</span>${CATCFG[c].short}</button>`).join('')}</div>
+    ${CAT_HINT[cat] ? `<div class="cathint">${CAT_HINT[cat]}</div>` : ''}
+    <div class="shopgrid2">${SHOP.filter(x => x.cat === cat).map(itemCard).join('')}</div>`;
   renderLocker();
   bindBuy(F('shopBody'));
-  F('shopBody').querySelectorAll('[data-go]').forEach(b => b.onclick = () => { const el = F('sec-' + b.dataset.go); if (el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 290, behavior:'smooth'}); });
+  F('shopBody').querySelectorAll('[data-cat]').forEach(b => b.onclick = () => { sfx.tap(); SHOPCAT = b.dataset.cat; renderShop(); });
+  F('shopBody').querySelectorAll('[data-go]').forEach(b => b.onclick = () => { sfx.tap(); SHOPCAT = b.dataset.go; renderShop(); });
   F('shopBody').querySelectorAll('[data-try]').forEach(b => b.onclick = () => {
     const x = shopItem(b.dataset.try);
     if (x.word !== 'nothing') say(CATCFG[x.cat].name(x.word), {rate:.8});
     TRY[x.cat] = x; TRY.last = x;
-    F('shopBody').querySelectorAll('.item.trying').forEach(i => i.classList.remove('trying'));
-    b.closest('.item').classList.add('trying');
+    F('shopBody').querySelectorAll('.item2.trying').forEach(i => i.classList.remove('trying'));
+    b.closest('.item2').classList.add('trying');
     renderLocker();
   });
   F('shopBody').querySelectorAll('[data-eq]').forEach(b => b.onclick = () => {
     const x = shopItem(b.dataset.eq); S.equip[x.cat] = x.id; delete TRY[x.cat]; sfx.tap(); applyShirt(); mountFigs(); save(); renderShop();
   });
   F('mystery').onclick = mysteryBox;
+  const on = F('shopBody').querySelector('.ct.on'); if (on) on.scrollIntoView({inline:'center', block:'nearest'});
 }
 function mysteryBox(){
   const pool = SHOP.filter(x => x.price > 0 && !S.owned.includes(x.id));
